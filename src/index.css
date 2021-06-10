@@ -659,9 +659,7 @@ video {
 }
 
 .appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .bg-fixed {
@@ -6573,7 +6571,6 @@ video {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -8038,23 +8035,19 @@ video {
 }
 
 .select-none {
-  -webkit-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .select-text {
-  -webkit-user-select: text;
-          user-select: text;
+  user-select: text;
 }
 
 .select-all {
-  -webkit-user-select: all;
-          user-select: all;
+  user-select: all;
 }
 
 .select-auto {
-  -webkit-user-select: auto;
-          user-select: auto;
+  user-select: auto;
 }
 
 .align-baseline {
@@ -8350,7 +8343,58 @@ video {
 
 /* Custom CSS */
 
-background: red;
+.App-logo {
+  width: 300px;
+}
+
+/* Card Hover */
+
+.card.state-1 {
+  opacity: 1;
+  transform: scale(1.0);
+  transition: opacity 350ms, transform 350ms;
+}
+
+.card.state-1:hover {
+  opacity: .75;
+  transform: scale(1.025);
+  transition: opacity 350ms, transform 350ms;
+}
+
+/* Card Animation */
+
+.state-2.enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.state-2.enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 350ms, transform 350ms;
+}
+
+.state-2.enter-active p,
+  .state-2.enter-active h3 {
+  color: blue;
+  transition: color 350ms;
+}
+
+.state-2.exit-active p,
+  .state-2.exit-active h3 {
+  color: red;
+  transition: color 350ms;
+}
+
+.state-2.exit {
+  opacity: 1;
+}
+
+.state-2.exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 350ms, transform 350ms;
+}
 
 @media (min-width: 640px) {
   .sm\:sr-only {
@@ -8400,9 +8444,7 @@ background: red;
   }
 
   .sm\:appearance-none {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
   }
 
   .sm\:bg-fixed {
@@ -14314,7 +14356,6 @@ background: red;
   }
 
   .sm\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -15779,23 +15820,19 @@ background: red;
   }
 
   .sm\:select-none {
-    -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
   }
 
   .sm\:select-text {
-    -webkit-user-select: text;
-            user-select: text;
+    user-select: text;
   }
 
   .sm\:select-all {
-    -webkit-user-select: all;
-            user-select: all;
+    user-select: all;
   }
 
   .sm\:select-auto {
-    -webkit-user-select: auto;
-            user-select: auto;
+    user-select: auto;
   }
 
   .sm\:align-baseline {
@@ -16138,9 +16175,7 @@ background: red;
   }
 
   .md\:appearance-none {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
   }
 
   .md\:bg-fixed {
@@ -22052,7 +22087,6 @@ background: red;
   }
 
   .md\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -23517,23 +23551,19 @@ background: red;
   }
 
   .md\:select-none {
-    -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
   }
 
   .md\:select-text {
-    -webkit-user-select: text;
-            user-select: text;
+    user-select: text;
   }
 
   .md\:select-all {
-    -webkit-user-select: all;
-            user-select: all;
+    user-select: all;
   }
 
   .md\:select-auto {
-    -webkit-user-select: auto;
-            user-select: auto;
+    user-select: auto;
   }
 
   .md\:align-baseline {
@@ -23876,9 +23906,7 @@ background: red;
   }
 
   .lg\:appearance-none {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
   }
 
   .lg\:bg-fixed {
@@ -29790,7 +29818,6 @@ background: red;
   }
 
   .lg\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -31255,23 +31282,19 @@ background: red;
   }
 
   .lg\:select-none {
-    -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
   }
 
   .lg\:select-text {
-    -webkit-user-select: text;
-            user-select: text;
+    user-select: text;
   }
 
   .lg\:select-all {
-    -webkit-user-select: all;
-            user-select: all;
+    user-select: all;
   }
 
   .lg\:select-auto {
-    -webkit-user-select: auto;
-            user-select: auto;
+    user-select: auto;
   }
 
   .lg\:align-baseline {
@@ -31614,9 +31637,7 @@ background: red;
   }
 
   .xl\:appearance-none {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
   }
 
   .xl\:bg-fixed {
@@ -37528,7 +37549,6 @@ background: red;
   }
 
   .xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -38993,23 +39013,19 @@ background: red;
   }
 
   .xl\:select-none {
-    -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
   }
 
   .xl\:select-text {
-    -webkit-user-select: text;
-            user-select: text;
+    user-select: text;
   }
 
   .xl\:select-all {
-    -webkit-user-select: all;
-            user-select: all;
+    user-select: all;
   }
 
   .xl\:select-auto {
-    -webkit-user-select: auto;
-            user-select: auto;
+    user-select: auto;
   }
 
   .xl\:align-baseline {
