@@ -10,7 +10,9 @@
 .App-logo {
   width: 300px;
 }
-
+.navbar{
+  background-color: rgb(183, 248, 232);
+}
 /* Card Hover */
 .card.state-1 {
   opacity: 1;
